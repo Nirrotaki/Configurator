@@ -15,52 +15,131 @@
             Content="РУВН" 
             HorizontalAlignment="Left" 
             Margin="100,50,0,0" 
-            VerticalAlignment="Top" Checked="radioRUVN_Checked"
+            VerticalAlignment="Top" 
+            Checked="radioRUVN_Checked" 
             />
 
-        <!-- Выбор ячеек -->
 
-        <ComboBox x:Name="comboBoxChoiseCell"
+
+        <!-- Создание кнопки РУНН-->
+
+        <RadioButton x:Name="radioRUNN" x:FieldModifier="public"
+            Content="РУНН" 
             HorizontalAlignment="Left" 
-            Margin="150,100,0,0"
+            Margin="200,50,0,0" 
+            VerticalAlignment="Top" Checked="radioRUNN_Checked" 
+            />
+
+        <!-- Выбор типа ячеек -->
+
+        <ComboBox x:Name="ChoiseTypeCells"
+            HorizontalAlignment="Left" 
+            Margin="200,100,0,0"
             Width="200"
             Visibility="Hidden"
             VerticalAlignment="Top" 
-            SelectionChanged="comboBoxChoiseCell_SelectionChanged" 
+            SelectionChanged="ChoiseTypeCells_SelectionChanged" 
+                  
             />
 
 
-        <!-- Название ячеек -->
+        <!-- Название типа ячеек -->
 
-        <TextBlock x:Name="textBlock_nameCells"
+        <TextBlock x:Name="ChoiseTypeCells_text"
             HorizontalAlignment="Left" 
             Margin="25,100,0,0" 
             TextWrapping="Wrap" 
-            Visibility="Hidden"
+            Visibility="Visible"
             VerticalAlignment="Top"/>
 
 
-        <!-- После выбора конструктива ячеек, выбираем тип -->
+        <!-- Выбор схемы -->
 
-        <ComboBox x:Name="typeCells"
+        <ComboBox x:Name="ChoiseSchemeCells"
             HorizontalAlignment="Left" 
-            Margin="150,150,0,0"
+            Margin="200,150,0,0"
             Width="200"
             Visibility="Hidden"
             VerticalAlignment="Top"
-            SelectionChanged="typeCells_SelectionChanged" 
+            SelectionChanged="ChoiseSchemeCells_SelectionChanged"
             />
 
 
-        <!-- Название ячеек -->
+        <!-- Выбор схемы текст -->
 
-        <TextBlock x:Name="textBlock_typeCells"
+        <TextBlock x:Name="ChoiseSchemeCells_text"
             HorizontalAlignment="Left" 
             Margin="25,150,0,0" 
             TextWrapping="Wrap" 
             Visibility="Hidden"
             VerticalAlignment="Top"/>
+
+        <!-- Выбор специализации -->
+
+        <ComboBox x:Name="ChoiseSpecCells"
+            HorizontalAlignment="Left" 
+            Margin="200,200,0,0"
+            Width="200"
+            Visibility="Hidden"
+            VerticalAlignment="Top" SelectionChanged="ChoiseSpecCells_SelectionChanged" 
+                  
+            />
+
+
+        <!-- Выбор специализации текст -->
+
+        <TextBlock x:Name="ChoiseSpecCells_text"
+            HorizontalAlignment="Left" 
+            Margin="25,200,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/>
         
+        <!-- Номинальный ток автоматов для РУНН -->
+
+        <ComboBox x:Name="ChoiseNomCurrent"
+            HorizontalAlignment="Left" 
+            Margin="200,250,0,0"
+            Width="75"
+            Visibility="Hidden"
+            VerticalAlignment="Top"                   
+            SelectionChanged="ChoiseNomCurrent_SelectionChanged" 
+                  
+            />
+
+
+        <!-- Номинальный ток автоматов для текст -->
+
+        <TextBlock x:Name="ChoiseNomCurrent_text"
+            HorizontalAlignment="Left" 
+            Margin="25,250,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/>
+
+        <!-- Количество автоматов для РУНН -->
+
+        <ComboBox x:Name="QantityAV"
+            HorizontalAlignment="Left" 
+            Margin="200,300,0,0"
+            Width="75"
+            Visibility="Hidden"
+            VerticalAlignment="Top" 
+            SelectionChanged="QantityAV_SelectionChanged"  
+                  
+            />
+
+
+        <!-- Количество автоматов для РУНН текст -->
+
+        <TextBlock x:Name="QantityAV_text"
+            HorizontalAlignment="Left" 
+            Margin="25,300,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/>
+
+
         <!-- Динамическая картинка -->
 
         <Image x:Name="cellsImages"
@@ -83,16 +162,6 @@
 
 
 
-
-
-        <!-- Создание кнопки РУНН-->
-
-        <RadioButton x:Name="radioRUNN" x:FieldModifier="public"
-            Content="РУНН" 
-            HorizontalAlignment="Left" 
-            Margin="200,50,0,0" 
-            VerticalAlignment="Top" Checked="radioRUNN_Checked"
-            />
         
 
 

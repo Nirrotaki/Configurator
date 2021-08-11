@@ -44,3 +44,27 @@ C:\Users\babai\source\repos\Config-v0.001\Config v0.001\Config v0.001\obj\Debug\
 C:\Users\babai\source\repos\Config-v0.001\Config v0.001\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.genruntimeconfig.cache
 C:\Users\babai\source\repos\Config-v0.001\Config v0.001\Config v0.001\obj\Debug\net5.0-windows\Config_v0._001.Properties.Resources.resources
 C:\Users\babai\source\repos\Config-v0.001\Config v0.001\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.csproj.GenerateResource.cache
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.exe
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.deps.json
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.runtimeconfig.json
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.runtimeconfig.dev.json
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.dll
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\bin\Debug\net5.0-windows\ref\Config v0.001.dll
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.pdb
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.csproj.AssemblyReference.cache
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\MainWindow.g.cs
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\App.g.cs
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001_MarkupCompile.cache
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001_MarkupCompile.lref
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\MainWindow.baml
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.g.resources
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config_v0._001.Properties.Resources.resources
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.csproj.GenerateResource.cache
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.GeneratedMSBuildEditorConfig.editorconfig
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.AssemblyInfoInputs.cache
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.AssemblyInfo.cs
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.csproj.CoreCompileInputs.cache
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.dll
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\ref\Config v0.001.dll
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.pdb
+S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.genruntimeconfig.cache
