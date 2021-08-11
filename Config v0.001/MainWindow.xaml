@@ -1,0 +1,101 @@
+﻿<Window x:Class="Config_v0._001.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Config_v0._001"
+        mc:Ignorable="d"
+        Icon="https://po-velta.ru/favicon.ico"
+        Title="Config" Height="800" Width="800">
+    <Grid>
+
+        <!-- Создание кнопки РУВН -->
+
+        <RadioButton x:Name="radioRUVN" x:FieldModifier="public"
+            Content="РУВН" 
+            HorizontalAlignment="Left" 
+            Margin="100,50,0,0" 
+            VerticalAlignment="Top" Checked="radioRUVN_Checked"
+            />
+
+        <!-- Выбор ячеек -->
+
+        <ComboBox x:Name="comboBoxChoiseCell"
+            HorizontalAlignment="Left" 
+            Margin="150,100,0,0"
+            Width="200"
+            Visibility="Hidden"
+            VerticalAlignment="Top" 
+            SelectionChanged="comboBoxChoiseCell_SelectionChanged" 
+            />
+
+
+        <!-- Название ячеек -->
+
+        <TextBlock x:Name="textBlock_nameCells"
+            HorizontalAlignment="Left" 
+            Margin="25,100,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/>
+
+
+        <!-- После выбора конструктива ячеек, выбираем тип -->
+
+        <ComboBox x:Name="typeCells"
+            HorizontalAlignment="Left" 
+            Margin="150,150,0,0"
+            Width="200"
+            Visibility="Hidden"
+            VerticalAlignment="Top"
+            SelectionChanged="typeCells_SelectionChanged" 
+            />
+
+
+        <!-- Название ячеек -->
+
+        <TextBlock x:Name="textBlock_typeCells"
+            HorizontalAlignment="Left" 
+            Margin="25,150,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/>
+        
+        <!-- Динамическая картинка -->
+
+        <Image x:Name="cellsImages"
+            HorizontalAlignment="Left" 
+            Visibility="Visible"
+            Height="288"
+            Margin="580,60,0,0" 
+            VerticalAlignment="Top" 
+            Width="180"
+             />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Создание кнопки РУНН-->
+
+        <RadioButton x:Name="radioRUNN" x:FieldModifier="public"
+            Content="РУНН" 
+            HorizontalAlignment="Left" 
+            Margin="200,50,0,0" 
+            VerticalAlignment="Top" Checked="radioRUNN_Checked"
+            />
+        
+
+
+
+    </Grid>
+</Window>
