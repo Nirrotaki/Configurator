@@ -143,7 +143,7 @@ namespace Config_v0._001
 
                     case (0):
                         cellsImages.Visibility = Visibility.Visible;
-                        cellsImages.Source = new BitmapImage(new Uri(@"../img/Screenshot_3.png", UriKind.Relative));
+                        //cellsImages.Source = new BitmapImage(new Uri(@"../img/Screenshot_3.png", UriKind.Relative));
 
                         return;
 
