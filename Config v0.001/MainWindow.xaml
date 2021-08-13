@@ -139,6 +139,92 @@
             Visibility="Hidden"
             VerticalAlignment="Top"/>
 
+        <!-- Дополнительная проверка на воздушные выключиатели -->
+
+        <ComboBox x:Name="doubleCheck_AV"
+            HorizontalAlignment="Left" 
+            Margin="200,350,0,0"
+            Width="200"
+            Visibility="Hidden"
+            VerticalAlignment="Top"
+            />
+
+
+        <!-- ополнительная проверка на воздушные выключиатели текст -->
+
+        <TextBlock x:Name="doubleCheck_AV_text"
+            HorizontalAlignment="Left" 
+            Margin="25,350,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/>
+
+        <!-- Выбор специализации -->
+
+        <ComboBox x:Name="QuantitydoubleCheck_AV"
+            HorizontalAlignment="Left" 
+            Margin="200,400,0,0"
+            Width="200"
+            Visibility="Hidden"
+            VerticalAlignment="Top" 
+            SelectionChanged="QuantitydoubleCheck_AV_SelectionChanged" 
+                  
+            />
+
+
+        <!-- Выбор специализации текст -->
+
+        <TextBlock x:Name="QuantitydoubleCheck_AV_text"
+            HorizontalAlignment="Left" 
+            Margin="25,400,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/> 
+
+        <!-- Номинальный ток автоматов для РУНН
+
+        <ComboBox x:Name="ChoiseNomCurrent"
+            HorizontalAlignment="Left" 
+            Margin="200,250,0,0"
+            Width="75"
+            Visibility="Hidden"
+            VerticalAlignment="Top"                   
+            SelectionChanged="ChoiseNomCurrent_SelectionChanged" 
+                  
+            /> -->
+
+
+        <!-- Номинальный ток автоматов для текст 
+
+        <TextBlock x:Name="ChoiseNomCurrent_text"
+            HorizontalAlignment="Left" 
+            Margin="25,250,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/>-->
+
+        <!-- Количество автоматов для РУНН 
+
+        <ComboBox x:Name="QantityAV"
+            HorizontalAlignment="Left" 
+            Margin="200,300,0,0"
+            Width="75"
+            Visibility="Hidden"
+            VerticalAlignment="Top" 
+            SelectionChanged="QantityAV_SelectionChanged"  
+                  
+            />-->
+
+
+        <!-- Количество автоматов для РУНН текст 
+
+        <TextBlock x:Name="QantityAV_text"
+            HorizontalAlignment="Left" 
+            Margin="25,300,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/>-->
+
 
         <!-- Динамическая картинка -->
 

@@ -418,11 +418,85 @@ namespace Config_v0._001
 
         }
 
+        // При выборе выоздушного автомата, выводим дополнительные литые автоматы
+
         private void QantityAV_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (ChoiseSchemeCells.ItemsSource == cellsRUNN_SHNV_Ar && ChoiseSpecCells.SelectedIndex == 1)
+            {
+                switch(QantityAV.SelectedIndex)
+                {
+                    case (0):
+                        doubleCheck_AV.Visibility = Visibility.Visible;
+                        doubleCheck_AV_text.Visibility = Visibility.Visible;
+                        doubleCheck_AV_text.Text = "Дополнительные АВ: ";
+
+                        cellsNomCurrent_Ar = new string[1]; // Задаю новую длину массива
+
+                        cellsNomCurrent_Ar[0] = "Литой корпус";
+
+                        doubleCheck_AV.ItemsSource = cellsNomCurrent_Ar;
+                        return;
+                    case (1):
+                        doubleCheck_AV.Visibility = Visibility.Visible;
+                        doubleCheck_AV_text.Visibility = Visibility.Visible;
+                        doubleCheck_AV_text.Text = "Дополнительные АВ: ";
+
+                        cellsNomCurrent_Ar = new string[1]; // Задаю новую длину массива
+
+                        cellsNomCurrent_Ar[0] = "Литой корпус";
+
+                        doubleCheck_AV.ItemsSource = cellsNomCurrent_Ar;
+                        return;
+                    case (2):
+                        doubleCheck_AV.Visibility = Visibility.Visible;
+                        doubleCheck_AV_text.Visibility = Visibility.Visible;
+                        doubleCheck_AV_text.Text = "Дополнительные АВ: ";
+
+                        cellsNomCurrent_Ar = new string[1]; // Задаю новую длину массива
+
+                        cellsNomCurrent_Ar[0] = "Литой корпус";
+
+                        doubleCheck_AV.ItemsSource = cellsNomCurrent_Ar;
+                        return;
+                    case (4):
+                        doubleCheck_AV.Visibility = Visibility.Visible;
+                        doubleCheck_AV_text.Visibility = Visibility.Visible;
+                        doubleCheck_AV_text.Text = "Дополнительные АВ: ";
+
+                        cellsNomCurrent_Ar = new string[1]; // Задаю новую длину массива
+
+                        cellsNomCurrent_Ar[0] = "Литой корпус";
+
+                        doubleCheck_AV.ItemsSource = cellsNomCurrent_Ar;
+                        return;
+
+                    default:
+                        doubleCheck_AV.Visibility = Visibility.Hidden;
+                        doubleCheck_AV_text.Visibility = Visibility.Hidden;
+
+                        return;
+                }
+            }
+            
 
 
+        }
 
+        private void QuantitydoubleCheck_AV_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ChoiseSchemeCells.SelectedIndex == 0)
+            {
+                MessageBox.Show("Show");
+
+                switch (doubleCheck_AV.SelectedIndex)
+                {
+                    case (0):
+                        QuantitydoubleCheck_AV.Visibility = Visibility.Visible;
+                        return;
+                }
+
+            }
         }
     }
 
