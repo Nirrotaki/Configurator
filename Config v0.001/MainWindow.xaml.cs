@@ -30,6 +30,8 @@ namespace Config_v0._001
         string[] cellsRUNN_SHO_Ar = { "ЩО-70_1", "ЩО-70_2", "ЩО-70_3", "ЩО-70_4", "ЩО-70_5" };
         public string[] cellsNomCurrent_Ar;
         public string[] QauntityAV_Ar;
+        public string AV_04 = "Литой корпус";
+        public string AV_6 = "Воздушный корпус";
 
 
         public MainWindow()
@@ -93,7 +95,7 @@ namespace Config_v0._001
         {
             // когда высвечивается тип ячеек РУВН
 
-            if(ChoiseTypeCells.ItemsSource == cellsRUVN_Ar)
+            if (ChoiseTypeCells.ItemsSource == cellsRUVN_Ar)
             {
                 ChoiseSchemeCells.Visibility = Visibility.Visible; // Высвечиваю выбор схемы
                 ChoiseSchemeCells_text.Visibility = Visibility.Visible; // Высвечиваю выбор схемы текст
@@ -164,8 +166,8 @@ namespace Config_v0._001
 
                         cellsNomCurrent_Ar = new string[2]; // Задаю новую длину массива
 
-                        cellsNomCurrent_Ar[0] = "Литой корпус"; 
-                        cellsNomCurrent_Ar[1] = "Воздушный корпус";
+                        cellsNomCurrent_Ar[0] = AV_04;
+                        cellsNomCurrent_Ar[1] = AV_6;
 
                         ChoiseSpecCells.ItemsSource = cellsNomCurrent_Ar;
 
@@ -196,15 +198,15 @@ namespace Config_v0._001
             }
 
 
-                
 
-            
+
+
 
         }
 
         private void ChoiseSpecCells_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(ChoiseSchemeCells.ItemsSource == cellsRUNN_SHNV_Ar && ChoiseSchemeCells.SelectedIndex == 1) // При выборе ШНЛ дополняю конфигуратор на емкость ячейки
+            if (ChoiseSchemeCells.ItemsSource == cellsRUNN_SHNV_Ar && ChoiseSchemeCells.SelectedIndex == 1) // При выборе ШНЛ дополняю конфигуратор на емкость ячейки
             {
 
                 switch (ChoiseSpecCells.SelectedIndex)
@@ -212,6 +214,13 @@ namespace Config_v0._001
                     case (0): // при выборе литово корпуса
                         ChoiseNomCurrent.Visibility = Visibility.Visible;
                         ChoiseNomCurrent_text.Visibility = Visibility.Visible;
+                        doubleCheck_AV.Visibility = Visibility.Hidden;
+                        doubleCheck_AV_text.Visibility = Visibility.Hidden;
+                        ChoiseNomCurrent_doubleCheck.Visibility = Visibility.Hidden;
+                        ChoiseNomCurrent_doubleCheck_text.Visibility = Visibility.Hidden;
+                        QuantitydoubleCheck_AV.Visibility = Visibility.Hidden;
+                        QuantitydoubleCheck_AV_text.Visibility = Visibility.Hidden;
+
                         ChoiseNomCurrent_text.Text = "Укажите номинальный ток";
 
                         cellsNomCurrent_Ar = new string[4];
@@ -261,6 +270,7 @@ namespace Config_v0._001
         {
             if (ChoiseSchemeCells.ItemsSource == cellsRUNN_SHNV_Ar && ChoiseSpecCells.SelectedIndex == 0)
             {
+                QantityAV.SelectedItem = 1;
 
                 switch (ChoiseNomCurrent.SelectedIndex)
                 {
@@ -346,16 +356,16 @@ namespace Config_v0._001
 
             if (ChoiseSchemeCells.ItemsSource == cellsRUNN_SHNV_Ar && ChoiseSpecCells.SelectedIndex == 1)
             {
+                QantityAV.SelectedItem = "Выбрать";
 
                 switch (ChoiseNomCurrent.SelectedIndex)
                 {
                     case (0): //При выборе воздушного автомата 800А
-                        QauntityAV_Ar = new string[4];
+                        QauntityAV_Ar = new string[3];
 
                         QauntityAV_Ar[0] = "1 шт.";
                         QauntityAV_Ar[1] = "2 шт.";
                         QauntityAV_Ar[2] = "3 шт.";
-                        QauntityAV_Ar[3] = "4 шт.";
 
                         QantityAV.Visibility = Visibility.Visible;
                         QantityAV_text.Visibility = Visibility.Visible;
@@ -410,11 +420,7 @@ namespace Config_v0._001
 
 
             }
-            else
-            {
-                QantityAV.Visibility = Visibility.Hidden;
-                QantityAV_text.Visibility = Visibility.Hidden;
-            }
+
 
         }
 
@@ -422,9 +428,12 @@ namespace Config_v0._001
 
         private void QantityAV_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (ChoiseSchemeCells.ItemsSource == cellsRUNN_SHNV_Ar && ChoiseSpecCells.SelectedIndex == 1)
+            
+
+            if (ChoiseSchemeCells.ItemsSource == cellsRUNN_SHNV_Ar && ChoiseSpecCells.SelectedIndex == 1 && ChoiseSpecCells.SelectedIndex == 1)
             {
-                switch(QantityAV.SelectedIndex)
+
+                switch (QantityAV.SelectedIndex)
                 {
                     case (0):
                         doubleCheck_AV.Visibility = Visibility.Visible;
@@ -433,7 +442,7 @@ namespace Config_v0._001
 
                         cellsNomCurrent_Ar = new string[1]; // Задаю новую длину массива
 
-                        cellsNomCurrent_Ar[0] = "Литой корпус";
+                        cellsNomCurrent_Ar[0] = AV_04;
 
                         doubleCheck_AV.ItemsSource = cellsNomCurrent_Ar;
                         return;
@@ -444,7 +453,7 @@ namespace Config_v0._001
 
                         cellsNomCurrent_Ar = new string[1]; // Задаю новую длину массива
 
-                        cellsNomCurrent_Ar[0] = "Литой корпус";
+                        cellsNomCurrent_Ar[0] =AV_04;
 
                         doubleCheck_AV.ItemsSource = cellsNomCurrent_Ar;
                         return;
@@ -455,49 +464,241 @@ namespace Config_v0._001
 
                         cellsNomCurrent_Ar = new string[1]; // Задаю новую длину массива
 
-                        cellsNomCurrent_Ar[0] = "Литой корпус";
+                        cellsNomCurrent_Ar[0] = AV_04;
 
                         doubleCheck_AV.ItemsSource = cellsNomCurrent_Ar;
                         return;
-                    case (4):
+                    case (3):
                         doubleCheck_AV.Visibility = Visibility.Visible;
                         doubleCheck_AV_text.Visibility = Visibility.Visible;
                         doubleCheck_AV_text.Text = "Дополнительные АВ: ";
 
                         cellsNomCurrent_Ar = new string[1]; // Задаю новую длину массива
 
-                        cellsNomCurrent_Ar[0] = "Литой корпус";
+                        cellsNomCurrent_Ar[0] = AV_04;
 
                         doubleCheck_AV.ItemsSource = cellsNomCurrent_Ar;
                         return;
-
                     default:
                         doubleCheck_AV.Visibility = Visibility.Hidden;
                         doubleCheck_AV_text.Visibility = Visibility.Hidden;
 
                         return;
+
                 }
+
             }
-            
+
+
 
 
         }
+
+        // Двойная проверка на ШНЛ с воздушником
+        private void doubleCheck_AV_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(doubleCheck_AV.SelectedIndex == 0)
+            {
+
+                switch (QantityAV.SelectedIndex)
+                {
+                    case (0):
+                        ChoiseNomCurrent_doubleCheck.Visibility = Visibility.Visible;
+                        ChoiseNomCurrent_doubleCheck_text.Visibility = Visibility.Visible;
+
+                        ChoiseNomCurrent_doubleCheck_text.Text = "Укажите номинальный ток";
+
+                        cellsNomCurrent_Ar = new string[4];
+
+                        cellsNomCurrent_Ar[0] = "100A";
+                        cellsNomCurrent_Ar[1] = "250A";
+                        cellsNomCurrent_Ar[2] = "400A";
+                        cellsNomCurrent_Ar[3] = "630A";
+
+                        ChoiseNomCurrent_doubleCheck.ItemsSource = cellsNomCurrent_Ar;
+                        return;
+
+                    case (1):
+                        ChoiseNomCurrent_doubleCheck.Visibility = Visibility.Visible;
+                        ChoiseNomCurrent_doubleCheck_text.Visibility = Visibility.Visible;
+
+                        ChoiseNomCurrent_doubleCheck_text.Text = "Укажите номинальный ток";
+
+                        cellsNomCurrent_Ar = new string[4];
+
+                        cellsNomCurrent_Ar[0] = "100A";
+                        cellsNomCurrent_Ar[1] = "250A";
+                        cellsNomCurrent_Ar[2] = "400A";
+                        cellsNomCurrent_Ar[3] = "630A";
+
+                        ChoiseNomCurrent_doubleCheck.ItemsSource = cellsNomCurrent_Ar;
+                        return;
+
+                    case (2):
+                        ChoiseNomCurrent_doubleCheck.Visibility = Visibility.Visible;
+                        ChoiseNomCurrent_doubleCheck_text.Visibility = Visibility.Visible;
+
+                        ChoiseNomCurrent_doubleCheck_text.Text = "Укажите номинальный ток";
+
+                        cellsNomCurrent_Ar = new string[4];
+
+                        cellsNomCurrent_Ar[0] = "100A";
+                        cellsNomCurrent_Ar[1] = "250A";
+                        cellsNomCurrent_Ar[2] = "400A";
+                        cellsNomCurrent_Ar[3] = "630A";
+
+                        ChoiseNomCurrent_doubleCheck.ItemsSource = cellsNomCurrent_Ar;
+                        return;
+
+                    case (3):
+                        ChoiseNomCurrent_doubleCheck.Visibility = Visibility.Visible;
+                        ChoiseNomCurrent_doubleCheck_text.Visibility = Visibility.Visible;
+
+                        ChoiseNomCurrent_doubleCheck_text.Text = "Укажите номинальный ток";
+
+                        cellsNomCurrent_Ar = new string[4];
+
+                        cellsNomCurrent_Ar[0] = "100A";
+                        cellsNomCurrent_Ar[1] = "250A";
+                        cellsNomCurrent_Ar[2] = "400A";
+                        cellsNomCurrent_Ar[3] = "630A";
+
+                        ChoiseNomCurrent_doubleCheck.ItemsSource = cellsNomCurrent_Ar;
+                        return;
+
+                    default:
+                        ChoiseNomCurrent_doubleCheck.Visibility = Visibility.Hidden;
+                        ChoiseNomCurrent_doubleCheck.Visibility = Visibility.Hidden;
+                        return;
+
+                }
+
+                
+            }
+            else
+            {
+
+                ChoiseNomCurrent_doubleCheck.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void ChoiseNomCurrent_doubleCheck_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            if(doubleCheck_AV.SelectedIndex == 0)
+            {
+                QuantitydoubleCheck_AV.Visibility = Visibility.Visible;
+                QuantitydoubleCheck_AV_text.Visibility = Visibility.Visible;
+                QuantitydoubleCheck_AV_text.Text = "Количество автоматов, шт";
+
+                switch (ChoiseNomCurrent.SelectedIndex, QantityAV.SelectedIndex, ChoiseNomCurrent_doubleCheck.SelectedIndex)
+                {
+                    case (0,0,0):
+
+                        QauntityAV_Ar = new string[4];
+
+                        QauntityAV_Ar[0] = "1 шт.";
+                        QauntityAV_Ar[1] = "2 шт.";
+                        QauntityAV_Ar[2] = "3 шт.";
+                        QauntityAV_Ar[3] = "4 шт.";
+
+                        QuantitydoubleCheck_AV.ItemsSource = QauntityAV_Ar;
+                        return;
+
+                    case (0,0,1):
+
+                        QauntityAV_Ar = new string[4];
+
+                        QauntityAV_Ar[0] = "1 шт.";
+                        QauntityAV_Ar[1] = "2 шт.";
+                        QauntityAV_Ar[2] = "3 шт.";
+                        QauntityAV_Ar[3] = "4 шт.";
+
+                        QuantitydoubleCheck_AV.ItemsSource = QauntityAV_Ar;
+                        return;
+
+                    case (0, 0, 2):
+
+                        QauntityAV_Ar = new string[3];
+
+                        QauntityAV_Ar[0] = "1 шт.";
+                        QauntityAV_Ar[1] = "2 шт.";
+                        QauntityAV_Ar[2] = "3 шт.";
+
+                        QuantitydoubleCheck_AV.ItemsSource = QauntityAV_Ar;
+                        return;
+
+                    case (0, 0, 3):
+
+                        QauntityAV_Ar = new string[3];
+
+                        QauntityAV_Ar[0] = "1 шт.";
+                        QauntityAV_Ar[1] = "2 шт.";
+                        QauntityAV_Ar[2] = "3 шт.";
+
+                        QuantitydoubleCheck_AV.ItemsSource = QauntityAV_Ar;
+                        return;
+                    case (0, 1, 0):
+
+                        QauntityAV_Ar = new string[4];
+
+                        QauntityAV_Ar[0] = "1 шт.";
+                        QauntityAV_Ar[1] = "2 шт.";
+                        QauntityAV_Ar[2] = "3 шт.";
+
+                        QuantitydoubleCheck_AV.ItemsSource = QauntityAV_Ar;
+                        return;
+
+                    case (0, 1, 1):
+
+                        QauntityAV_Ar = new string[4];
+
+                        QauntityAV_Ar[0] = "1 шт.";
+                        QauntityAV_Ar[1] = "2 шт.";
+                        QauntityAV_Ar[2] = "3 шт.";
+
+                        QuantitydoubleCheck_AV.ItemsSource = QauntityAV_Ar;
+                        return;
+
+                    case (0, 1, 2):
+
+                        QauntityAV_Ar = new string[3];
+
+                        QauntityAV_Ar[0] = "1 шт.";
+                        QauntityAV_Ar[1] = "2 шт.";
+
+                        QuantitydoubleCheck_AV.ItemsSource = QauntityAV_Ar;
+                        return;
+
+                    case (0, 1, 3):
+
+                        QauntityAV_Ar = new string[3];
+
+                        QauntityAV_Ar[0] = "1 шт.";
+                        QauntityAV_Ar[1] = "2 шт.";
+
+                        QuantitydoubleCheck_AV.ItemsSource = QauntityAV_Ar;
+                        return;
+                  
+                    case (0, 2, 0):
+
+                        QuantitydoubleCheck_AV.Visibility = Visibility.Collapsed;
+                        QuantitydoubleCheck_AV_text.Visibility = Visibility.Collapsed;
+                        return;
+
+                }
+
+            }
+
+        }
+
+
 
         private void QuantitydoubleCheck_AV_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (ChoiseSchemeCells.SelectedIndex == 0)
-            {
-                MessageBox.Show("Show");
-
-                switch (doubleCheck_AV.SelectedIndex)
-                {
-                    case (0):
-                        QuantitydoubleCheck_AV.Visibility = Visibility.Visible;
-                        return;
-                }
-
-            }
+            
         }
+
     }
 
 }

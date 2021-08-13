@@ -147,6 +147,7 @@
             Width="200"
             Visibility="Hidden"
             VerticalAlignment="Top"
+            SelectionChanged="doubleCheck_AV_SelectionChanged"
             />
 
 
@@ -159,11 +160,33 @@
             Visibility="Hidden"
             VerticalAlignment="Top"/>
 
-        <!-- Выбор специализации -->
+        <!-- Номинальный ток автоматов для РУНН -->
+
+        <ComboBox x:Name="ChoiseNomCurrent_doubleCheck"
+            HorizontalAlignment="Left" 
+            Margin="200,400,0,0"
+            Width="75"
+            Visibility="Hidden"
+            VerticalAlignment="Top"
+            SelectionChanged="ChoiseNomCurrent_doubleCheck_SelectionChanged"                   
+                  
+            />
+
+
+        <!-- Номинальный ток автоматов для текст  -->
+
+        <TextBlock x:Name="ChoiseNomCurrent_doubleCheck_text"
+            HorizontalAlignment="Left" 
+            Margin="25,400,0,0" 
+            TextWrapping="Wrap" 
+            Visibility="Hidden"
+            VerticalAlignment="Top"/>
+        
+        <!-- Выбор количество автоматов для доп проверки -->
 
         <ComboBox x:Name="QuantitydoubleCheck_AV"
             HorizontalAlignment="Left" 
-            Margin="200,400,0,0"
+            Margin="200,450,0,0"
             Width="200"
             Visibility="Hidden"
             VerticalAlignment="Top" 
@@ -176,32 +199,11 @@
 
         <TextBlock x:Name="QuantitydoubleCheck_AV_text"
             HorizontalAlignment="Left" 
-            Margin="25,400,0,0" 
+            Margin="25,450,0,0" 
             TextWrapping="Wrap" 
             Visibility="Hidden"
-            VerticalAlignment="Top"/> 
+            VerticalAlignment="Top"/>
 
-        <!-- Номинальный ток автоматов для РУНН
-
-        <ComboBox x:Name="ChoiseNomCurrent"
-            HorizontalAlignment="Left" 
-            Margin="200,250,0,0"
-            Width="75"
-            Visibility="Hidden"
-            VerticalAlignment="Top"                   
-            SelectionChanged="ChoiseNomCurrent_SelectionChanged" 
-                  
-            /> -->
-
-
-        <!-- Номинальный ток автоматов для текст 
-
-        <TextBlock x:Name="ChoiseNomCurrent_text"
-            HorizontalAlignment="Left" 
-            Margin="25,250,0,0" 
-            TextWrapping="Wrap" 
-            Visibility="Hidden"
-            VerticalAlignment="Top"/>-->
 
         <!-- Количество автоматов для РУНН 
 
