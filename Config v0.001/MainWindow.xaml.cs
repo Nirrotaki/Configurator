@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Config_v0._001.Models;
 
 
 
@@ -42,8 +43,8 @@ namespace Config_v0._001
             InitializeComponent();
 
 
-
         }
+
 
         // РадиоБаттон при переключании на РУВН
         private void radioRUVN_Checked(object sender, RoutedEventArgs e)
@@ -95,23 +96,32 @@ namespace Config_v0._001
         {
             // когда высвечивается тип ячеек РУВН
 
-            if (ChoiseTypeCells.ItemsSource == cellsRUVN_Ar)
+            void check(object checkName)
             {
-                ChoiseSchemeCells.Visibility = Visibility.Visible; // Высвечиваю выбор схемы
-                ChoiseSchemeCells_text.Visibility = Visibility.Visible; // Высвечиваю выбор схемы текст
-                ChoiseSchemeCells_text.Text = "Выберите схему " + Convert.ToString(ChoiseTypeCells.SelectedItem); // Присваиваю значения схемы к тексту
 
-                switch (ChoiseTypeCells.SelectedIndex) // При выборе ячейки РУВН (КСО, КРУ)
+
+
+                if (ChoiseTypeCells.ItemsSource == cellsRUVN_Ar)
                 {
-                    case 0:
-                        ChoiseSchemeCells.ItemsSource = cellsRUVN_KCO_393_Ar; //Присваиваю массив КСО-393
-                        return;
-                    case 1:
-                        ChoiseSchemeCells.ItemsSource = cellsRUVN_KRU_VLT_Ar; //Присваиваю массив КРУ-ВЛТ
-                        return;
+                    ChoiseSchemeCells.Visibility = Visibility.Visible; // Высвечиваю выбор схемы
+                    ChoiseSchemeCells_text.Visibility = Visibility.Visible; // Высвечиваю выбор схемы текст
+                    ChoiseSchemeCells_text.Text = "Выберите схему " + Convert.ToString(ChoiseTypeCells.SelectedItem); // Присваиваю значения схемы к тексту
+
+                    switch (ChoiseTypeCells.SelectedIndex) // При выборе ячейки РУВН (КСО, КРУ)
+                    {
+                        case 0:
+                            ChoiseSchemeCells.ItemsSource = cellsRUVN_KCO_393_Ar; //Присваиваю массив КСО-393
+                            return;
+                        case 1:
+                            ChoiseSchemeCells.ItemsSource = cellsRUVN_KRU_VLT_Ar; //Присваиваю массив КРУ-ВЛТ
+                            return;
+                    }
+
                 }
 
             }
+
+            
 
             // когда высвечивается тип ячеек РУНН
 
@@ -211,7 +221,7 @@ namespace Config_v0._001
 
                 switch (ChoiseSpecCells.SelectedIndex)
                 {
-                    case (0): // при выборе литово корпуса
+                    case (0): // при выборе литого корпуса
                         ChoiseNomCurrent.Visibility = Visibility.Visible;
                         ChoiseNomCurrent_text.Visibility = Visibility.Visible;
                         doubleCheck_AV.Visibility = Visibility.Hidden;
@@ -640,7 +650,7 @@ namespace Config_v0._001
                         return;
                     case (0, 1, 0):
 
-                        QauntityAV_Ar = new string[4];
+                        QauntityAV_Ar = new string[3];
 
                         QauntityAV_Ar[0] = "1 шт.";
                         QauntityAV_Ar[1] = "2 шт.";
@@ -651,7 +661,7 @@ namespace Config_v0._001
 
                     case (0, 1, 1):
 
-                        QauntityAV_Ar = new string[4];
+                        QauntityAV_Ar = new string[3];
 
                         QauntityAV_Ar[0] = "1 шт.";
                         QauntityAV_Ar[1] = "2 шт.";
@@ -662,7 +672,7 @@ namespace Config_v0._001
 
                     case (0, 1, 2):
 
-                        QauntityAV_Ar = new string[3];
+                        QauntityAV_Ar = new string[2];
 
                         QauntityAV_Ar[0] = "1 шт.";
                         QauntityAV_Ar[1] = "2 шт.";
@@ -672,7 +682,7 @@ namespace Config_v0._001
 
                     case (0, 1, 3):
 
-                        QauntityAV_Ar = new string[3];
+                        QauntityAV_Ar = new string[2];
 
                         QauntityAV_Ar[0] = "1 шт.";
                         QauntityAV_Ar[1] = "2 шт.";
