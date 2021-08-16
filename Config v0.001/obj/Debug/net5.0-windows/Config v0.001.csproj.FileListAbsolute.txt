@@ -68,3 +68,27 @@ S:\_Электрики\Аникин В.В\База\!Шаблон\Передел�
 S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\ref\Config v0.001.dll
 S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.pdb
 S:\_Электрики\Аникин В.В\База\!Шаблон\Переделочки\VisualStudio\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.genruntimeconfig.cache
+C:\Users\babai\source\repos\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.exe
+C:\Users\babai\source\repos\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.deps.json
+C:\Users\babai\source\repos\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.runtimeconfig.json
+C:\Users\babai\source\repos\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.runtimeconfig.dev.json
+C:\Users\babai\source\repos\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.dll
+C:\Users\babai\source\repos\Configurator\Config v0.001\bin\Debug\net5.0-windows\ref\Config v0.001.dll
+C:\Users\babai\source\repos\Configurator\Config v0.001\bin\Debug\net5.0-windows\Config v0.001.pdb
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.csproj.AssemblyReference.cache
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001_MarkupCompile.cache
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001_MarkupCompile.lref
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.g.resources
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config_v0._001.Properties.Resources.resources
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.csproj.GenerateResource.cache
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.AssemblyInfoInputs.cache
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.AssemblyInfo.cs
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.csproj.CoreCompileInputs.cache
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.dll
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\ref\Config v0.001.dll
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.pdb
+C:\Users\babai\source\repos\Configurator\Config v0.001\obj\Debug\net5.0-windows\Config v0.001.genruntimeconfig.cache

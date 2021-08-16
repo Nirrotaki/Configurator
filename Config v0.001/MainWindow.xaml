@@ -8,6 +8,7 @@
         Icon="https://po-velta.ru/favicon.ico"
         Title="Config" Height="800" Width="800">
     <Grid>
+        
 
         <!-- Создание кнопки РУВН -->
 
@@ -16,8 +17,7 @@
             HorizontalAlignment="Left" 
             Margin="100,50,0,0" 
             VerticalAlignment="Top" 
-            Visibility="Hidden"
-            Checked="radioRUVN_Checked" 
+            Visibility="Hidden" 
             />
 
 
@@ -28,7 +28,8 @@
             Content="РУНН" 
             HorizontalAlignment="Left" 
             Margin="200,50,0,0" 
-            VerticalAlignment="Top" Checked="radioRUNN_Checked" 
+            VerticalAlignment="Top"
+            Checked="radioRUNN_Method"
             />
 
         <!-- Выбор типа ячеек -->
@@ -39,7 +40,6 @@
             Width="200"
             Visibility="Hidden"
             VerticalAlignment="Top" 
-            SelectionChanged="ChoiseTypeCells_SelectionChanged" 
                   
             />
 
@@ -62,7 +62,6 @@
             Width="200"
             Visibility="Hidden"
             VerticalAlignment="Top"
-            SelectionChanged="ChoiseSchemeCells_SelectionChanged"
             />
 
 
@@ -82,8 +81,7 @@
             Margin="200,200,0,0"
             Width="200"
             Visibility="Hidden"
-            VerticalAlignment="Top" SelectionChanged="ChoiseSpecCells_SelectionChanged" 
-                  
+            VerticalAlignment="Top" 
             />
 
 
@@ -104,7 +102,6 @@
             Width="75"
             Visibility="Hidden"
             VerticalAlignment="Top"                   
-            SelectionChanged="ChoiseNomCurrent_SelectionChanged" 
                   
             />
 
@@ -126,7 +123,6 @@
             Width="75"
             Visibility="Hidden"
             VerticalAlignment="Top" 
-            SelectionChanged="QantityAV_SelectionChanged"  
                   
             />
 
@@ -148,7 +144,6 @@
             Width="200"
             Visibility="Hidden"
             VerticalAlignment="Top"
-            SelectionChanged="doubleCheck_AV_SelectionChanged"
             />
 
 
@@ -168,8 +163,7 @@
             Margin="200,400,0,0"
             Width="75"
             Visibility="Hidden"
-            VerticalAlignment="Top"
-            SelectionChanged="ChoiseNomCurrent_doubleCheck_SelectionChanged"                   
+            VerticalAlignment="Top"                  
                   
             />
 
@@ -191,7 +185,6 @@
             Width="200"
             Visibility="Hidden"
             VerticalAlignment="Top" 
-            SelectionChanged="QuantitydoubleCheck_AV_SelectionChanged" 
                   
             />
 
